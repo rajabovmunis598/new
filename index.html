@@ -4,9 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <h1>hello world</h1>
-    <p>helow world</p>
+    <header class="w-full flex items-center justify-between px-8 py-4 bg-white border-b border-gray-100">
+  <div class="flex items-center">
+    <span class="text-[15px] font-black tracking-[0.18em] text-[#111] border border-[#111] px-2 py-0.5">MANIFOLD</span>
+  </div>
+  <nav class="hidden md:flex items-center gap-8 text-[14px] font-medium text-[#111]">
+    <a href="#" class="hover:text-[#e8253a] transition-colors">Services</a>
+    <a href="#" class="hover:text-[#e8253a] transition-colors">Portfolio</a>
+    <a href="#" class="hover:text-[#e8253a] transition-colors">Email Marketing Audit</a>
+  </nav>
+  <a href="#" class="hidden md:flex items-center justify-center px-5 py-2.5 bg-[#e8253a] text-white text-[12px] font-black tracking-widest uppercase hover:bg-[#c41e30] transition-colors">
+    CONTACT US
+  </a>
+  <label for="mob-nav" class="flex md:hidden cursor-pointer">
+    <svg class="w-6 h-6 text-[#111]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </label>
+</header>
+
+<input type="checkbox" id="mob-nav" class="hidden peer"/>
+<div class="hidden peer-checked:flex flex-col md:hidden bg-white border-b border-gray-100 px-6 py-4 gap-4 text-[14px] font-medium text-[#111]">
+  <a href="#" class="py-2 border-b border-gray-100 hover:text-[#e8253a]">Services</a>
+  <a href="#" class="py-2 border-b border-gray-100 hover:text-[#e8253a]">Portfolio</a>
+  <a href="#" class="py-2 border-b border-gray-100 hover:text-[#e8253a]">Email Marketing Audit</a>
+  <a href="#" class="py-2 text-[#e8253a] font-bold uppercase tracking-widest text-[12px]">CONTACT US</a>
+</div>
+
+<section class="relative w-full bg-white overflow-hidden" style="min-height: 440px;">
+  <div class="absolute right-0 top-0 h-full w-[55%] pointer-events-none">
+    <svg viewBox="0 0 600 440" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+      <defs>
+        <linearGradient id="wg" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="white" stop-opacity="1"/>
+          <stop offset="30%" stop-color="white" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <g fill="none" stroke="#f0a0a8" stroke-width="1.2" opacity="0.7">
+        <path d="M600,0 Q480,80 520,160 Q560,240 480,320 Q400,400 440,440 L600,440 Z"/>
+        <path d="M600,0 Q470,90 510,170 Q550,250 470,330 Q390,410 430,440 L600,440 Z"/>
+        <path d="M600,0 Q460,100 500,180 Q540,260 460,340 Q380,420 420,440 L600,440 Z"/>
+        <path d="M600,0 Q450,110 490,190 Q530,270 450,350 Q370,430 410,440 L600,440 Z"/>
+        <path d="M600,0 Q440,120 480,200 Q520,280 440,360 Q360,440 400,440 L600,440 Z"/>
+        <path d="M600,0 Q430,130 470,210 Q510,290 430,370 Q350,440 390,440 L600,440 Z"/>
+        <path d="M600,0 Q420,140 460,220 Q500,300 420,380 Q340,440 380,440 L600,440 Z"/>
+        <path d="M600,0 Q410,150 450,230 Q490,310 410,390 Q330,440 370,440 L600,440 Z"/>
+        <path d="M600,0 Q400,160 440,240 Q480,320 400,400 Q320,440 360,440 L600,440 Z"/>
+        <path d="M600,0 Q390,170 430,250 Q470,330 390,410 Q310,440 350,440 L600,440 Z"/>
+        <path d="M600,0 Q380,180 420,260 Q460,340 380,420 Q310,440 340,440 L600,440 Z"/>
+        <path d="M600,0 Q370,190 410,270 Q450,350 370,430 L600,440 Z"/>
+        <path d="M600,0 Q360,200 400,280 Q440,360 360,440 L600,440 Z"/>
+        <path d="M600,0 Q350,210 390,290 Q430,370 360,440 L600,440 Z"/>
+        <path d="M600,20 Q345,220 380,300 Q415,380 350,440 L600,440 Z"/>
+        <path d="M600,40 Q340,230 370,310 Q400,390 340,440 L600,440 Z"/>
+        <path d="M600,60 Q335,240 360,320 Q385,400 330,440 L600,440 Z"/>
+        <path d="M600,80 Q330,250 350,330 Q370,410 320,440 L600,440 Z"/>
+        <path d="M600,100 Q325,260 340,340 Q355,420 310,440 L600,440 Z"/>
+        <path d="M600,120 Q320,270 330,350 Q340,430 300,440 L600,440 Z"/>
+        <path d="M600,140 Q315,280 320,360 Q325,440 295,440 L600,440 Z"/>
+        <path d="M600,160 Q310,290 315,370 L600,440 Z"/>
+        <path d="M600,180 Q305,300 310,380 L600,440 Z"/>
+        <path d="M600,200 Q300,310 305,390 L600,440 Z"/>
+        <path d="M600,220 Q298,320 300,400 L600,440 Z"/>
+      </g>
+      <rect x="0" y="0" width="180" height="440" fill="url(#wg)"/>
+    </svg>
+  </div>
+
+  <div class="relative z-10 px-6 sm:px-10 md:px-16 py-14 md:py-20 max-w-[640px]">
+    <h1 class="text-[48px] sm:text-[62px] md:text-[72px] font-black leading-[0.95] uppercase text-[#111] mb-5">
+      <span class="text-[#e8253a]">BOOST</span> YOUR EMAIL<br/>MARKETING RESULTS!
+    </h1>
+    <p class="text-[15px] md:text-[16px] text-[#444] mb-8 font-normal">
+      We help B2C brands grow their email-attributed revenue
+    </p>
+    <a href="#" class="inline-flex items-center justify-center px-6 py-3 bg-[#e8253a] text-white text-[12px] font-black tracking-widest uppercase hover:bg-[#c41e30] transition-colors">
+      BOOST YOUR RESULTS
+    </a>
+  </div>
+</section>
+
+<section class="bg-white border-t border-gray-100 py-8 px-5 sm:px-8 md:px-16">
+  <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-6 md:gap-8">
+    <div class="flex items-center gap-2">
+      <div class="w-[32px] h-[32px] rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
+        <img src="logo_lev.png" alt="" class="w-full h-full object-contain"/>
+      </div>
+      <span class="text-[13px] font-semibold text-[#222] italic">Lev Haoiam</span>
+    </div>
+    <div>
+      <img src="logo_schneider.png" alt="Schneider Electric" class="h-[36px] object-contain grayscale"/>
+    </div>
+    <div>
+      <img src="logo_aliexpress.png" alt="AliExpress" class="h-[28px] object-contain grayscale"/>
+    </div>
+    <div>
+      <img src="logo_laroche.png" alt="La Roche-Posay" class="h-[36px] object-contain grayscale"/>
+    </div>
+    <div>
+      <img src="logo_papajohns.png" alt="Papa Johns" class="h-[28px] object-contain grayscale"/>
+    </div>
+    <div>
+      <img src="logo_kfc.png" alt="KFC" class="h-[36px] object-contain grayscale"/>
+    </div>
+  </div>
+</section>
 </body>
 </html>
